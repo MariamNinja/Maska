@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="registeration.css" />
+  <script src="https://kit.fontawesome.com/0b0cd0c012.js" crossorigin="anonymous"></script>
+  <title>Registration</title>
+</head>
+
+<body>
+  <div class="containerbox">
+    <nav class="nav">
+      <div class="nav-name">
+        <p>Maska</p>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#" class="link">Home</a></li>
+          <li><a href="#" class="link">Booking</a></li>
+          <li><a href="#" class="link">Services</a></li>
+          <li><a href="#" class="link">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn white-btn" id="loginBtn" onclick="login()">Log in</button>
+        <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <div class="form-box">
+        <!-- Login -->
+        <div class="login-container" id="login">
+          <div class="top">
+            <h3>Welcome back ...</h3>
+            <header>Log in</header>
+          </div>
+          <form name="loginForm" id="loginForm" onsubmit="validateLogin(event)">
+            <div class="input-box">
+              <input type="email" class="input-field" placeholder="Email" />
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input id="id_password" type="password" class="input-field" placeholder="Password" />
+              <i class="bx bx-lock-alt"></i>
+              <i id="togglePassword" class="fa-regular fa-eye-slash"></i>
+              <div class="forgotpass">
+                <a href="forgot.html">Forgot password?</a>
+              </div>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="submit" value="Log in" />
+            </div>
+          </form>
+        
+  </div>
+  </div>
+  </div>
+</body>
+</html>
+
+</html>

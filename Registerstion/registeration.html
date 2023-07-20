@@ -30,4 +30,98 @@
       <div class="nav-menu-btn">
         <i class="bx bx-menu" onclick="myMenuFunction()"></i>
       </div>
+<<<<<<< Updated upstream
     </nav>
+=======
+    </nav>
+
+    <div class="form-box">
+        <!-- Login -->
+        <div class="login-container" id="login">
+          <div class="top">
+            <h3>Welcome back ...</h3>
+            <header>Log in</header>
+          </div>
+          <form name="loginForm" id="loginForm" onsubmit="validateLogin(event)">
+            <div class="input-box">
+              <input type="email" class="input-field" placeholder="Email" />
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input id="id_password" type="password" class="input-field" placeholder="Password" />
+              <i class="bx bx-lock-alt"></i>
+              <i id="togglePassword" class="fa-regular fa-eye-slash"></i>
+              <div class="forgotpass">
+                <a href="forgot.html">Forgot password?</a>
+              </div>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="submit" value="Log in" />
+            </div>
+          </form>
+        
+  </div>
+
+  <form name="myform" id="myform" onsubmit="validations(event)">
+    <!-- register -->
+    <div class="register-container" id="register">
+      <div class="top">
+        <h3>Become a member ?</h3>
+        <header>Register now</header>
+      </div>
+      <div class="two-forms">
+        <div class="input-box">
+          <input type="text" class="input-field" placeholder="First name" name="fname" />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" class="input-field" placeholder="Last name" name="lname" />
+          <i class="bx bx-user"></i>
+        </div>
+      </div>
+      <div class="input-box">
+        <input type="text" class="input-field" placeholder="Email" name="emailin" />
+        <i class="bx bx-envelope"></i>
+      </div>
+      <div class="input-box">
+        <input id="reg-password" type="password" class="input-field" placeholder="Password" name="passwordo" />
+        <i class="bx bx-lock-alt"></i>
+        <i id="togglePassword2" class="fa-regular fa-eye-slash"></i>
+      </div>
+      <div class="input-box">
+        <input id="conpassword" type="password" class="input-field" placeholder="confirm password"
+          name="confirmpassword" />
+        <i class="bx bx-lock-alt"></i>
+        <i id="togglePassword3" class="fa-regular fa-eye-slash"></i>
+      </div>
+      <div class="upload">
+        <div class="input-box">
+          <input type="text" class="input-field" placeholder="National ID" name="nationalID">
+          <i class='bx bxs-id-card'></i>
+        </div>
+        <div class="uploadimg">
+           <label for="id-image"><i class='bx bx-upload' style="cursor: pointer;"></i> </label>
+          <input id="id-image" type="file" name="image" style="display: none; visibility: none;"
+            onchange="getImage(this.value);">
+            <span class="tooltiptext" style="color: #fff;">Upload your Image</span>
+          </div>
+        <div id="display-image" style="color: #fff;"></div>
+      </div>
+      <!-- Add the span element for error messages -->
+      <div style="height: 20px;">
+        <span id="errorMessages" class="error-message"></span>
+      </div>
+      <div class="input-box">
+        <input type="submit" class="submit" value="Register" />
+      </div>
+    </div>
+  </form>
+
+  <script src="registeration.js"> </script>
+
+  </div>
+  </div>
+</body>
+</html>
+
+>>>>>>> Stashed changes

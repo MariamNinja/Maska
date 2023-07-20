@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     overflow: hidden;
 }
-/* The start of the nav bar */
+
 .containerbox {
     display: flex;
     justify-content: center;
@@ -83,6 +83,7 @@ body {
 
 .nav-menu-btn {
     display: none;
+
 }
 
 
@@ -206,4 +207,5 @@ h3 {
     font-size: 18px; 
     display: block; 
     margin-bottom: 5px; 
+
 }

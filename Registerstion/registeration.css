@@ -276,3 +276,44 @@ h3 {
   
 
 }
+@media only screen and (max-width: 786px) {
+
+    .nav-menu.responsive {
+        top: 100px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: -800px;
+        background: rgba(63, 52, 52, 0.162);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .nav-menu-btn {
+        display: block;
+    }
+
+    .nav-menu-btn i {
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+
+    }
+
+    .nav-menu-btn i:hover {
+        background: rgba(255, 255, 255, 0.01);
+    }
+}

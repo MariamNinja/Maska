@@ -83,8 +83,7 @@ body {
 
 .nav-menu-btn {
     display: none;
-<<<<<<< Updated upstream
-=======
+
 }
 
 
@@ -109,6 +108,7 @@ body {
     transition: .5s ease-in-out;
 }
 
+
 .register-container {
     position: absolute;
     right: -520px;
@@ -119,6 +119,7 @@ body {
     transition: .5s ease-in-out;
    
 }
+
 
 .top {
 
@@ -162,7 +163,10 @@ h3 {
     color: #fff;
 }
 
+
 .input-box #togglePassword, #togglePassword2 , #togglePassword3 {
+
+
     cursor: pointer;
     position: relative;
     top: -27px;
@@ -219,6 +223,7 @@ h3 {
     font-size: 18px; 
     display: block; 
     margin-bottom: 5px; 
+
 }
 .uploadimg {
     position: relative;
@@ -269,5 +274,5 @@ h3 {
     font-size: 25px;
     margin: 20px;
   
->>>>>>> Stashed changes
+
 }

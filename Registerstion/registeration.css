@@ -108,6 +108,19 @@ body {
     transition: .5s ease-in-out;
 }
 
+
+.register-container {
+    position: absolute;
+    right: -520px;
+    bottom : 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+   
+}
+
+
 .top {
 
     margin: 20px 0;
@@ -150,7 +163,10 @@ h3 {
     color: #fff;
 }
 
-.input-box #togglePassword {
+
+.input-box #togglePassword, #togglePassword2 , #togglePassword3 {
+
+
     cursor: pointer;
     position: relative;
     top: -27px;
@@ -207,5 +223,56 @@ h3 {
     font-size: 18px; 
     display: block; 
     margin-bottom: 5px; 
+
+}
+.uploadimg {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .uploadimg .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .uploadimg .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .uploadimg:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .upload{
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.upload .uploadimg label{
+    color:#fff;
+
+}
+.upload .uploadimg i{
+    font-size: 25px;
+    margin: 20px;
+  
 
 }

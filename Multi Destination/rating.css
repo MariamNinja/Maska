@@ -18,7 +18,20 @@
     background-color:navy;
     color: white;
  }
- 
+.text{
+    height: 30px; /* le hagm el drop menu*/
+    width: 190px;
+    background-color:whitesmoke;
+    color: black;
+    border-color: whitesmoke;
+    border-style:groove;
+    border-radius: 15px;
+     padding: 0 10px;
+    margin:5px 10px 5px 0;
+    position: relative;
+    display: block; 
+
+}
  main {
     background-color:whitesmoke;
     width: 24rem;
@@ -89,7 +102,7 @@
  
  img + p.thankYouState {
     background-color: hsl(213deg 20% 21%);
-    color:white;
+    color:black;
     padding: 0.3rem 0.85rem;
     border-radius: 1rem;
     font-size: smaller;

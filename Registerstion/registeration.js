@@ -129,7 +129,7 @@ function validationsLogin(event) {
     showError = true;
   }
 
-  const errorSpan = document.getElementById("loginErrorMessages"); 
+  const errorSpan = document.getElementById("loginErrorMessages");
   if (showError) {
     errorSpan.innerHTML = errorMessages;
     errorSpan.style.display = "block";
@@ -140,3 +140,29 @@ function validationsLogin(event) {
 
 document.getElementById("loginForm").addEventListener("submit", validationsLogin);
 
+const passwordInput = document.querySelector("#reg-password");
+
+const requirements = [
+  { regex: /.{8,}/, index: 0 },
+  { regex: /.*[0-9].*/, index: 1 },
+  { regex: /.*[a-z].*/, index: 2 },
+  { regex: /.*[^A-Za-z0-9].*/, index: 3 },
+  { regex: /.*[A-Z].*/, index: 4 },
+];
+
+const requirementList = document.querySelectorAll(".requirement-list li");
+
+passwordInput.addEventListener("input", (event) => {
+  const passwordValue = event.target.value;
+
+  requirements.forEach((item) => {
+    const isValid = item.regex.test(passwordValue);
+    const requirementItem = requirementList[item.index];
+
+    if (isValid) {
+      requirementItem.querySelector("i").classList = "fa-solid fa-check";
+    } else {
+      requirementItem.querySelector("i").classList = "fa-solid fa-circle";
+    }
+  });
+});

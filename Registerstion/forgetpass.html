@@ -49,7 +49,11 @@
           
           <div class="input-box">
             <input type="submit" class="submit" value="Continue" />
-          </div>
+            <div class="forgotpass">
+              <a href="registeration.html">Already have an account ?</a>
+            </div>
+          </div>         
+
         </form>
       </div>
 
@@ -61,12 +65,12 @@
     
           </div>
           <div class="otp-input-container">
-            <input type="text" class="input-field"   maxlength="1" name="digit1"  />
-            <input type="text"class="input-field"    maxlength="1" name="digit2"  />
-            <input type="text" class="input-field" maxlength="1" name="digit3"  />
-            <input type="text" class="input-field"  maxlength="1" name="digit4" />
-            <input type="text" class="input-field"  maxlength="1" name="digit5"  />
-            <input type="text" class="input-field"   maxlength="1" name="digit6" />
+            <input type="text" class="input-field"  name="digit1" onkeyup="clickEvent(this,'sec')" />
+            <input type="text"class="input-field"  id="sec"  maxlength="1" name="digit2" onkeyup="clickEvent(this,'third')" />
+            <input type="text" class="input-field" id="third" maxlength="1" name="digit3" onkeyup="clickEvent(this,'fourth')" />
+            <input type="text" class="input-field" id="fourth" maxlength="1" name="digit4" onkeyup="clickEvent(this,'fifth')" />
+            <input type="text" class="input-field" id="fifth" maxlength="1" name="digit5" onkeyup="clickEvent(this,'sixth')" />
+            <input type="text" class="input-field"  id="sixth" maxlength="1" name="digit6" />
           </div>
           <!-- Add the span element for error messages -->
           <div style="height: 20px;">
@@ -84,7 +88,7 @@
       <h3>Enter your new password</h3>
     </div>
     <div class="input-box">
-          <i style="position: absolute; top :90px; left :470px;"  class="bx bx-hide eye-icon" id="toggleResetPassword" onclick="togglePasswordVisibility('reset-password')"></i>
+          <i  class="bx bx-hide eye-icon" id="toggleResetPassword" onclick="togglePasswordVisibility('reset-password')"></i>
 
       <input
         id="reset-password"
@@ -94,7 +98,7 @@
       /><i class="bx bx-lock-alt lock-icon"></i>  
     </div>
     <div class="input-box">
-     <i style="position: absolute; top: 164px ; left:470px ;" class="bx bx-hide eye-icon" id="toggleConfirmResetPassword" onclick="togglePasswordVisibility('confirm-reset-password')"></i>
+     <i class="bx bx-hide eye-icon" id="toggleConfirmResetPassword" onclick="togglePasswordVisibility('confirm-reset-password')"></i>
 
       <input
         id="confirm-reset-password"
@@ -115,6 +119,14 @@
 
     </div>
   </div>
+<!-- To move from otp input to next one on key up -->
+  <script>
+    function clickEvent(first,last){
+      if(first.value.length){
+        document.getElementById(last).focus();
+      }
+    }
+  </script>
 
   <script>
     function myMenuFunction() {

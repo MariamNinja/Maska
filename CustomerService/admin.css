@@ -25,6 +25,7 @@
     height: 80px;
     display: flex;
     align-items: center;
+    margin-left: 20px;
   }
   
   .sidebar .logo-details i {
@@ -37,6 +38,7 @@
   
   
   .sidebar .logo-details .logo_name {
+    
     color: #fff;
     font-size: 24px;
     font-weight: 500;

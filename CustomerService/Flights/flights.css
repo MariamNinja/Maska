@@ -15,9 +15,9 @@
     width: 60px;
   }
   
-.show {
+  .show {
   display: none ;
-}
+  }
   .sidebar .logo-details{
     height: 80px;
     display: flex;
@@ -172,21 +172,21 @@
     position: absolute;
     top: 104px;
   }
-
-
-
-.viewflight .row {
+  
+  
+  
+  .viewflight .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
     margin: 50px 0;
-}
-
-.viewflight .col-md-3 {
+  }
+  
+  .viewflight .col-md-3 {
     width: 20%;
     height: auto;
-    margin: 15px;
+    margin: 18px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 20px;
@@ -196,38 +196,40 @@
     transition: 0.5s;
     display: flex;
     flex-wrap: wrap;
-
-}
-
-.flights {
+  
+  }
+  
+  .flights {
     background-color: #fff;
     text-align: center;
-}
-
-.flights .flight-image {
+    border-radius: 8px;
+  }
+  
+  .flights .flight-image {
     overflow: hidden;
     position: relative;
-}
-
-.flights .flight-image a.image {
+    border-radius: 8px
+  }
+  
+  .flights .flight-image a.image {
     display: block;
-}
-
-.flights .flight-image img {
+  }
+  
+  .flights .flight-image img {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
-}
-
-.flights .flight-image .pic-1 {
+  }
+  
+  .flights .flight-image .pic-1 {
     transition: 1.2s;
-}
-
-.flights .flight-image:hover .pic-1 {
+  }
+  
+  .flights .flight-image:hover .pic-1 {
     opacity: 0;
-}
-
-.flights .flight-image .pic-2 {
+  }
+  
+  .flights .flight-image .pic-2 {
     width: 100%;
     height: auto;
     backface-visibility: hidden;
@@ -236,17 +238,17 @@
     top: 0;
     left: 0;
     transition: 1.2s;
-}
-
-.flights .flight-image:hover .pic-2 {
+  }
+  
+  .flights .flight-image:hover .pic-2 {
     opacity: 1;
     transform: scale(1.2);
-
-}
-
-
-
-.flights .links {
+  
+  }
+  
+  
+  
+  .flights .links {
     color: #000;
     background: #fff;
     font-size: 14px;
@@ -260,9 +262,9 @@
     list-style: none;
     transition: .4s;
     display: inline-flex;
-}
-
-.flights .Icon a {
+  }
+  
+  .flights .Icon a {
     color: #0c0c0c;
     line-height: 30px;
     width: 40px;
@@ -270,30 +272,30 @@
     transition: .4s;
     padding: 5px;
     text-decoration: none;
-}
-
-.flights:hover .links {
+  }
+  
+  .flights:hover .links {
     bottom: 0;
     opacity: 1;
-}
-
-
-.flights .links .Icon {
+  }
+  
+  
+  .flights .links .Icon {
     margin-left: 10px;
-}
-
-.Icon:hover {
+  }
+  
+  .Icon:hover {
     transform: translateY(0px);
-}
-
-.flights .Icon a:hover {
+  }
+  
+  .flights .Icon a:hover {
     color: #fff;
     background-color: #000;
-
-}
-
-
-.Icon .tooltiptext {
+  
+  }
+  
+  
+  .Icon .tooltiptext {
     visibility: hidden;
     width: 123px;
     background-color: #333;
@@ -306,9 +308,9 @@
     left: 50%;
     margin-left: -60px;
     font-size: 12px;
-}
-
-.Icon .tooltiptext::after {
+  }
+  
+  .Icon .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -317,13 +319,16 @@
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-}
-
-.Icon:hover .tooltiptext {
+  }
+  
+  .Icon:hover .tooltiptext {
     visibility: visible;
-}
-
-.flights .Content .product-title {
+  }
+  .Content{
+    margin: 10px;
+  
+  }
+  .flights .Content .product-title {
     font-weight: 600;
     color: #222;
     letter-spacing: 0px;
@@ -332,28 +337,52 @@
     margin: 0; /* Remove default margin for the heading */
     display: flex;
     align-items: center; /* Align items vertically in the center */
-}
-
-.arrow i {
-    vertical-align: middle; /* Adjust the vertical alignment of the arrow icon */
+  }
+  
+  .Content .cost{
+    height: 31.5px;
+  }
+  
+  .Content .cost .lower-price{
+    float: right;
+    padding-top: 8px;
+    color: #455873;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 0;
+  }
+  
+  .Content .cost .lower-price .price{
+    color: #101112;
+    font-weight: bold;
     font-size: 18px;
-
-}
-
-.arrow {
-    margin: 0 5px; /* Add spacing between "Munch" and the arrow */
-}
-.Content {
+  }
+  
+  .Content .detailsinfo{
+    padding-top: 8px;
+    color: #455873;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 0;
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-}
-
-.product-title {
-    margin: 0; /* Remove default margin for the heading */
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-}
-.dropdown-content {
+    align-items: center;
+  }
+  .Content .detailsinfo .separate{
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin: 0 8px;
+    background-color: #ced2d9;
+  }
+  .Content .detailsinfo .nofdays{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+  .dropdown-content {
   display: none;
   position: absolute;
   right : 5px;
@@ -361,21 +390,21 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-.dropdown-content a {
+  }
+  
+  .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-}
-
-.dropdown-content a:hover {
+  }
+  
+  .dropdown-content a:hover {
   background-color: #f1f1f1;
-
-}
-
-.dropdown:hover .dropdown-content {
+  
+  }
+  
+  .dropdown:hover .dropdown-content {
   display: block;
-}
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="add.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="colum">
+            <div class="container">
+                <div class="title">
+                    <h3>Add Flight</h3>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <label for="from"> Form</label>
+                        <input type="text" id="from" name="from" placeholder="City">
+                        <label for="depart"> Departure</label>
+                        <input type="date" id="depart" name="depart" placeholder="">
+                        <div class="row">
+                            <div class="col1">
+                                <label for="adults">Adults</label>
+                                <select id="adults">
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+
+                                </select>
+                            </div>
+                            <div class="col1">
+                                <label for="child">Children</label>
+                                <select id="child">
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+
+                                </select>
+                            </div>
+                            <div class="col1">
+                                <label for="cabin">Cabin</label>
+                                <select id="cabin">
+                                    <option value="Economy">Economy</option>
+                                    <option value="PremiumEconomy">Premium Economy</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Firstclass">First Class</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col1">
+                        <label for="to">To</label>
+                        <input type="text" id="to" name="to" placeholder="City or Airport">
+                        <label for="return">Return</label>
+                        <select id="return">
+                            <option value="oneway">Oneway</option>
+                            <option value="round-trip">Round-trip</option>
+                        </select>
+                        <div class="row">
+                            <div class="col1">
+                                <label for="Infants">Infants</label>
+                                <select id="Infants">
+
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Add Flight" class="btn">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

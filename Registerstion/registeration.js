@@ -166,3 +166,22 @@ passwordInput.addEventListener("input", (event) => {
     }
   });
 });
+// Function to handle the login action
+function loginAction() {
+  const enteredEmail = document.forms["loginForm"]["email"].value;
+  const enteredPassword = document.forms["loginForm"]["pass"].value;
+
+  if (enteredEmail === "admin@gmail.com" && enteredPassword === "admin") {
+    window.location.href = "../CustomerService/admin.html";
+  } else {
+    document.getElementById("loginErrorMessages").innerText = "Invalid username or password";
+    document.getElementById("loginErrorMessages").style.display = "block";
+  }
+}
+
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+  event.preventDefault(); 
+  validationsLogin(event); 
+  loginAction();
+});
+

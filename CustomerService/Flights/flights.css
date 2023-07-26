@@ -408,3 +408,12 @@
   .dropdown:hover .dropdown-content {
   display: block;
   }
+  /* Add styles for the green and red product titles */
+.product-title.green {
+    color: green;
+  }
+  
+  .product-title.red {
+    color: red;
+  }
+  

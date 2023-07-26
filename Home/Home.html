@@ -16,23 +16,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b>MASKA <I>Airway</I></b></a>
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-navy"><b>MASKA <I>Airway</I></b></a>
 
-  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-navy w3-text-grey"><i class="fa fa-search"></i></a>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:2000px">
   <img class="w3-image" src="https://c.ekstatic.net/ecl/aircraft-exterior/emirates-united-plane-tails-hp-w1920x480.jpg?h=NWMUMuGtbfpTh5BcRSb4EQ"width="2000" height="1100">
   <div class="w3-display-middle" style="width:65%">
-    <div class="w3-bar w3-red">
+    <div class="w3-bar w3-blue">
+      
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'One way Flight');"><i class="fa fa-plane w3-margin-right"></i>One way Flight</button>
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'roundtrip');"><i class="fa fa-plane w3-margin-right"></i>Roundtrip</button>
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"></button>
     </div>
 
     <!-- Tabs -->
-    <div id="One way Flight" class="w3-container w3-white w3-padding-16 myLink">
+    <div id="One way Flight" class="w3-container  w3-white w3-padding-16 myLink">
       <h3>Where are you going to explore first!</h3>
       <div class="w3-row-padding" style="margin:0 -16px;">
         
@@ -56,18 +57,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <label>Passangers</label>
             <input class="w3-input w3-border" type="number" placeholder="Every seat is for one person only ">
           </div>
-  
-  <label class="w3-half">Econmy class
-    <input type="radio" checked="checked" name="Econmy class">
-    <span class="checkmark"></span>
-  </label>
 
-  <label class="w3-half">Business class
-    <input type="radio" name="Business class">
-    <span class="checkmark"></span>
-  </label>
-  
-      
+          <INPUT TYPE="radio" NAME="class" 
+          VALUE="Econmy class">Econmy class
+         <INPUT TYPE="radio" NAME="class" 
+          VALUE="Business class">Business class
 
       </div>
       <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
@@ -94,15 +88,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
           <input class="w3-input w3-border" type="number" placeholder="Staying for">
         </div>
         
-        <label class="w3-half">Econmy class
-          <input type="radio" checked="checked" name="Econmy class">
-          <span class="checkmark"></span>
-        </label>
-      
-        <label class="w3-half">Business class
-          <input type="radio" name="Business class">
-          <span class="checkmark"></span>
-        </label>
+        <INPUT TYPE="radio" NAME="class2" 
+          VALUE="Econmy class">Econmy class
+         <INPUT TYPE="radio" NAME="class2" 
+          VALUE="Business class">Business class
         
         
       </div>

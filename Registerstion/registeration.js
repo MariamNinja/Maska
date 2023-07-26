@@ -171,17 +171,22 @@ function loginAction() {
   const enteredEmail = document.forms["loginForm"]["email"].value;
   const enteredPassword = document.forms["loginForm"]["pass"].value;
 
-  if (enteredEmail === "admin@gmail.com" && enteredPassword === "admin") {
+  // Add more email and password combinations as needed
+  if ((enteredEmail === "admin@gmail.com" && enteredPassword === "admin")) {
     window.location.href = "../CustomerService/admin.html";
+  } else if (enteredEmail === "quality@gmail.com" && enteredPassword === "admin2") {
+    window.location.href = "../QualityControl/quality.html";
+  } else if (enteredEmail === "user@gmail.com" && enteredPassword === "user") {
+    window.location.href = "../Home/Home.html";
   } else {
     document.getElementById("loginErrorMessages").innerText = "Invalid username or password";
-    document.getElementById("loginErrorMessages").style.display = "block";
   }
 }
 
 document.getElementById("loginForm").addEventListener("submit", function (event) {
-  event.preventDefault(); 
-  validationsLogin(event); 
+  event.preventDefault();
+  validationsLogin(event);
   loginAction();
 });
+
 

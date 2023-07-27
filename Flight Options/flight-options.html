@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <p class="logo">Maska</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+                <button style="background-color: #0A2558; color: white; padding: 10px 20px; border: none; border-radius: 5px; height:50px"
+        onmouseover="this.style.backgroundColor='green';" 
+        onmouseout="this.style.backgroundColor='#0A2558';">Checkout</button>
+            </div>
+        </div>
+       <script src="flight-options.js"></script>
+    </body>
+</html>
+
+

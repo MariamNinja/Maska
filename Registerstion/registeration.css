@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("/images/kk.PNG");
+    background: url("/Registerstion/kk.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -156,10 +156,11 @@ h3 {
     background: rgba(255, 255, 255, 0.25);
 }
 
-.input-box{
-    height:40px;
+.input-box {
+    height: 40px;
     margin-bottom: 20px;
 }
+
 .input-box i {
     position: relative;
     top: -35px;
@@ -298,33 +299,36 @@ h3 {
 
 
 }
-.content{
+
+.content {
     margin: 10px 0 10px;
 }
 
-.content p{
+.content p {
     font-size: 1rem;
     color: #fff;
 }
+
 .requirement-list {
     list-style: none;
     color: #fff;
-  
-  }
-  
-  .requirement-list li {
-    display: inline-block; 
-    margin-right: 20px; 
-  }
-  
-  .requirement-list li:nth-child(even) {
-    margin-right: 2px; 
-  }
-  .strength-box {
+
+}
+
+.requirement-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.requirement-list li:nth-child(even) {
+    margin-right: 2px;
+}
+
+.strength-box {
     border-radius: 10px;
     padding: 10px;
-  }
-  
+}
+
 @media only screen and (max-width: 786px) {
 
     .nav-menu.responsive {

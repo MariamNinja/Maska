@@ -177,7 +177,7 @@
 
       x.style.left = "-1000px";
       y.style.right = "5px";
-      z.style.right = "5px"; // Add this line to fix the transition issue
+      z.style.right = "5px"; 
       document.getElementById("loginBtn").classList.remove("white-btn");
       document.getElementById("registerBtn").classList.remove("white-btn");
       document.getElementById("resetPasswordBtn").classList.add("white-btn");
@@ -272,8 +272,6 @@
       errorSpan.style.display = "block";
     } else {
       errorSpan.style.display = "none";
-      // You can now use the 'otpValue' variable that contains the 6-digit OTP entered by the user.
-      // You may want to proceed with further logic for registration.
     }
   }
 

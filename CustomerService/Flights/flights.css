@@ -1,90 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  }
-  .sidebar{
+}
+
+.sidebar {
     position: fixed;
     height: 100%;
     width: 240px;
     background: #0A2558;
     transition: all 0.5s ease;
-  }
-  .sidebar.active{
+}
+
+.sidebar.active {
     width: 60px;
-  }
-  
-  .show {
-  display: none ;
-  }
-  .sidebar .logo-details{
+}
+
+.show {
+    display: none;
+}
+
+.sidebar .logo-details {
     height: 80px;
     display: flex;
     align-items: center;
     margin-left: 20px;
-  }
-  .sidebar .logo-details i{
+}
+
+.sidebar .logo-details i {
     font-size: 28px;
     font-weight: 500;
     color: #fff;
     min-width: 60px;
     text-align: center
-  }
-  .sidebar .logo-details .logo_name{
+}
+
+.sidebar .logo-details .logo_name {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
-  }
-  .sidebar .nav-links{
+}
+
+.sidebar .nav-links {
     margin-top: 10px;
-  }
-  .sidebar .nav-links li{
+}
+
+.sidebar .nav-links li {
     position: relative;
     list-style: none;
     height: 50px;
-  }
-  .sidebar .nav-links li a{
+}
+
+.sidebar .nav-links li a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-  }
-  .sidebar .nav-links li a.active{
+}
+
+.sidebar .nav-links li a.active {
     background: #081D45;
-  }
-  .sidebar .nav-links li a:hover{
+}
+
+.sidebar .nav-links li a:hover {
     background: #081D45;
-  }
-  .sidebar .nav-links li i{
+}
+
+.sidebar .nav-links li i {
     min-width: 60px;
     text-align: center;
     font-size: 18px;
     color: #fff;
-  }
-  
-  .sidebar .nav-links li a .links_name{
+}
+
+.sidebar .nav-links li a .links_name {
     color: #fff;
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
-  }
-  .sidebar .nav-links .log_out{
+}
+
+.sidebar .nav-links .log_out {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-  .home-section{
+}
+
+.home-section {
     position: relative;
     background: #f5f5f5;
     min-height: 100vh;
     width: calc(100% - 240px);
     left: 240px;
     transition: all 0.5s ease;
-  }
-  .home-section nav{
+}
+
+.home-section nav {
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -98,25 +112,29 @@
     padding: 0 20px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
-  }
-  .home-section nav .sidebar-button{
+}
+
+.home-section nav .sidebar-button {
     display: flex;
     align-items: center;
     font-size: 24px;
     font-weight: 500;
-  }
-  nav .sidebar-button i{
+}
+
+nav .sidebar-button i {
     font-size: 35px;
     margin-right: 10px;
-  }
-  .home-section nav .search-box{
+}
+
+.home-section nav .search-box {
     position: relative;
     height: 50px;
     max-width: 550px;
     width: 100%;
     margin: 0 20px;
-  }
-  nav .search-box input{
+}
+
+nav .search-box input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -125,8 +143,9 @@
     border-radius: 6px;
     font-size: 18px;
     padding: 0 15px;
-  }
-  nav .search-box .bx-search{
+}
+
+nav .search-box .bx-search {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -140,8 +159,9 @@
     color: #fff;
     font-size: 22px;
     transition: all 0.4 ease;
-  }
-  .home-section nav .profile-details{
+}
+
+.home-section nav .profile-details {
     display: flex;
     align-items: center;
     background: #F5F6FA;
@@ -150,40 +170,44 @@
     height: 50px;
     min-width: 190px;
     padding: 0 15px 0 2px;
-  }
-  nav .profile-details img{
+}
+
+nav .profile-details img {
     height: 40px;
     width: 40px;
     border-radius: 6px;
     object-fit: cover;
-  }
-  nav .profile-details .admin_name{
+}
+
+nav .profile-details .admin_name {
     font-size: 15px;
     font-weight: 500;
     color: #333;
     margin: 0 10px;
     white-space: nowrap;
-  }
-  nav .profile-details i{
+}
+
+nav .profile-details i {
     font-size: 25px;
     color: #333;
-  }
-  .home-section .viewflight{
+}
+
+.home-section .viewflight {
     position: absolute;
     top: 104px;
-  }
-  
-  
-  
-  .viewflight .row {
+}
+
+
+
+.viewflight .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
     margin: 50px 0;
-  }
-  
-  .viewflight .col-md-3 {
+}
+
+.viewflight .col-md-3 {
     width: 20%;
     height: auto;
     margin: 18px;
@@ -196,40 +220,40 @@
     transition: 0.5s;
     display: flex;
     flex-wrap: wrap;
-  
-  }
-  
-  .flights {
+
+}
+
+.flights {
     background-color: #fff;
     text-align: center;
     border-radius: 8px;
-  }
-  
-  .flights .flight-image {
+}
+
+.flights .flight-image {
     overflow: hidden;
     position: relative;
     border-radius: 8px
-  }
-  
-  .flights .flight-image a.image {
+}
+
+.flights .flight-image a.image {
     display: block;
-  }
-  
-  .flights .flight-image img {
+}
+
+.flights .flight-image img {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
-  }
-  
-  .flights .flight-image .pic-1 {
+}
+
+.flights .flight-image .pic-1 {
     transition: 1.2s;
-  }
-  
-  .flights .flight-image:hover .pic-1 {
+}
+
+.flights .flight-image:hover .pic-1 {
     opacity: 0;
-  }
-  
-  .flights .flight-image .pic-2 {
+}
+
+.flights .flight-image .pic-2 {
     width: 100%;
     height: auto;
     backface-visibility: hidden;
@@ -238,17 +262,17 @@
     top: 0;
     left: 0;
     transition: 1.2s;
-  }
-  
-  .flights .flight-image:hover .pic-2 {
+}
+
+.flights .flight-image:hover .pic-2 {
     opacity: 1;
     transform: scale(1.2);
-  
-  }
-  
-  
-  
-  .flights .links {
+
+}
+
+
+
+.flights .links {
     color: #000;
     background: #fff;
     font-size: 14px;
@@ -262,9 +286,9 @@
     list-style: none;
     transition: .4s;
     display: inline-flex;
-  }
-  
-  .flights .Icon a {
+}
+
+.flights .Icon a {
     color: #0c0c0c;
     line-height: 30px;
     width: 40px;
@@ -272,30 +296,29 @@
     transition: .4s;
     padding: 5px;
     text-decoration: none;
-  }
-  
-  .flights:hover .links {
+}
+
+.flights:hover .links {
     bottom: 0;
     opacity: 1;
-  }
-  
-  
-  .flights .links .Icon {
+}
+
+
+.flights .links .Icon {
     margin-left: 10px;
-  }
-  
-  .Icon:hover {
+}
+
+.Icon:hover {
     transform: translateY(0px);
-  }
-  
-  .flights .Icon a:hover {
+}
+
+.flights .Icon a:hover {
     color: #fff;
     background-color: #000;
-  
-  }
-  
-  
-  .Icon .tooltiptext {
+
+}
+
+.Icon .tooltiptext {
     visibility: hidden;
     width: 123px;
     background-color: #333;
@@ -308,9 +331,9 @@
     left: 50%;
     margin-left: -60px;
     font-size: 12px;
-  }
-  
-  .Icon .tooltiptext::after {
+}
+
+.Icon .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -319,31 +342,33 @@
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  }
-  
-  .Icon:hover .tooltiptext {
+}
+
+.Icon:hover .tooltiptext {
     visibility: visible;
-  }
-  .Content{
+}
+
+.Content {
     margin: 10px;
-  
-  }
-  .flights .Content .product-title {
+
+}
+
+.flights .Content .product-title {
     font-weight: 600;
     color: #222;
     letter-spacing: 0px;
     line-height: 20px;
     font-size: 18px;
-    margin: 0; /* Remove default margin for the heading */
+    margin: 0;
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-  }
-  
-  .Content .cost{
+    align-items: center;
+}
+
+.Content .cost {
     height: 31.5px;
-  }
-  
-  .Content .cost .lower-price{
+}
+
+.Content .cost .lower-price {
     float: right;
     padding-top: 8px;
     color: #455873;
@@ -351,15 +376,15 @@
     line-height: 22px;
     text-align: left;
     letter-spacing: 0;
-  }
-  
-  .Content .cost .lower-price .price{
+}
+
+.Content .cost .lower-price .price {
     color: #101112;
     font-weight: bold;
     font-size: 18px;
-  }
-  
-  .Content .detailsinfo{
+}
+
+.Content .detailsinfo {
     padding-top: 8px;
     color: #455873;
     font-size: 14px;
@@ -368,52 +393,55 @@
     letter-spacing: 0;
     display: flex;
     align-items: center;
-  }
-  .Content .detailsinfo .separate{
+}
+
+.Content .detailsinfo .separate {
     display: inline-block;
     width: 1px;
     height: 8px;
     margin: 0 8px;
     background-color: #ced2d9;
-  }
-  .Content .detailsinfo .nofdays{
+}
+
+.Content .detailsinfo .nofdays {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break: keep-all;
-  }
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  right : 5px;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  }
-  
-  .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-  background-color: #f1f1f1;
-  
-  }
-  
-  .dropdown:hover .dropdown-content {
-  display: block;
-  }
-  /* Add styles for the green and red product titles */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Add styles for the green and red product titles */
 .product-title.green {
     color: green;
-  }
-  
-  .product-title.red {
+}
+
+.product-title.red {
     color: red;
-  }
-  
+}
